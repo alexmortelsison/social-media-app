@@ -26,12 +26,13 @@ const Navbar = () => {
   return (
     <div className="h-24 flex items-center justify-between">
       {/* LEFT */}
-      <div className="md:hidden lg:block w-[20%]">
+      <div className="md:hidden lg:block w-[20%] truncate">
         <Link
           href={"/"}
           className="text-xl md:text-4xl font-extrabold tracking-tighter"
         >
-          SOCIA<span className="text-primary">LY.</span>
+          <span className="text-black">SOCIA</span>
+          <span className="text-primary">LY.</span>
         </Link>
       </div>
 
