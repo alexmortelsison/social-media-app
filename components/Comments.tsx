@@ -6,7 +6,6 @@ import { MoreHorizontalIcon, ThumbsUpIcon } from "lucide-react";
 const Comments = () => {
   return (
     <div>
-      {/* WRITE */}
       <div className="flex items-center gap-4">
         <Avatar>
           <AvatarImage
@@ -26,31 +25,30 @@ const Comments = () => {
         </div>
       </div>
 
-      {/* COMMENTS */}
-      <div>
-        {/* COMMENT */}
-        <div className="flex items-center gap-4 justify-between mt-6">
-          <div>
-            {/* AVATAR */}
-            <Avatar>
-              <AvatarImage
-                src="https://images.pexels.com/photos/19640832/pexels-photo-19640832/free-photo-of-untitled.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
-                className="object-cover"
-              />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-          </div>
+      <div className="mt-6">
+        <div className="flex gap-4">
+          <Avatar className="h-10 w-10">
+            <AvatarImage
+              src="https://images.pexels.com/photos/19640832/pexels-photo-19640832/free-photo-of-untitled.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+              className="object-cover"
+            />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
 
-          <div className="flex flex-col gap-2 flex-1">
-            {/* DESC */}
-            <span className="font-medium">Katherine Sison</span>
-            <p>
+          <div className="flex-1">
+            <div className="flex items-center gap-2">
+              <span className="font-medium">Katherine Sison</span>
+              <MoreHorizontalIcon className="w-4 cursor-pointer ml-auto" />
+            </div>
+
+            <p className="mt-1 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
               distinctio, maiores officiis aliquid asperiores omnis labore
               quaerat recusandae aperiam, molestiae consequuntur veniam
               dignissimos consectetur illo impedit adipisci? Obcaecati, quod
               perferendis.
             </p>
+
             <div className="flex items-center gap-8 text-sm text-gray-500 mt-2">
               <div className="flex items-center gap-4">
                 <ThumbsUpIcon
@@ -62,10 +60,6 @@ const Comments = () => {
               </div>
               <div>Reply</div>
             </div>
-          </div>
-          <div>
-            {/* ICON */}
-            <MoreHorizontalIcon className="w-4 cursor-pointer" />
           </div>
         </div>
       </div>

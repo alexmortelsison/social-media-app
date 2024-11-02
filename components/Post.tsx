@@ -39,7 +39,7 @@ const Post = () => {
             className="object-cover rounded-md"
           />
         </div>
-        <p>
+        <p className="text-sm">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore,
           dolorem! Ad accusantium perspiciatis quos dolorum ullam dolores, in
           provident officia ipsa cum asperiores sit ratione rem, omnis a
