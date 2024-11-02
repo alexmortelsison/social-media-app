@@ -10,7 +10,17 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
-import { BookAIcon, GroupIcon, HomeIcon, LogIn, UsersRoundIcon } from "lucide-react";
+import {
+  BellIcon,
+  BookAIcon,
+  GroupIcon,
+  HomeIcon,
+  LogIn,
+  MessagesSquareIcon,
+  SearchIcon,
+  UserSquare2,
+  UsersRoundIcon,
+} from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -21,25 +31,33 @@ const Navbar = () => {
           href={"/"}
           className="text-xl md:text-4xl font-extrabold tracking-tighter"
         >
-          SOCIA<span className="text-primary">LY</span>
+          SOCIA<span className="text-primary">LY.</span>
         </Link>
       </div>
 
       {/* CENTER */}
-      <div className="hidden md:flex w-[50%] text-sm">
+      <div className="hidden md:flex w-[50%] text-sm items-center justify-between">
         <div className="flex gap-6 text-gray-600">
           <Link href={"/"} className="flex gap-2 items-center">
             <HomeIcon />
             <span>Homepage</span>
           </Link>
           <Link href={"/friends"} className="flex gap-2 items-center">
-            <UsersRoundIcon/>
+            <UsersRoundIcon />
             <span>Friends</span>
           </Link>
           <Link href={"/stories"} className="flex gap-2 items-center">
             <BookAIcon />
             <span>Stories</span>
           </Link>
+        </div>
+        <div className="hidden xl:flex p-2 bg-slate-100 items-center rounded-xl">
+          <input
+            type="text"
+            placeholder="Search"
+            className="bg-transparent outline-none"
+          ></input>
+          <SearchIcon className="w-4" />
         </div>
       </div>
 
@@ -59,23 +77,13 @@ const Navbar = () => {
         <ClerkLoaded>
           <SignedIn>
             <div className="cursor-pointer">
-              <Image src={"/people.png"} alt="People" width={20} height={20} />
+              <UserSquare2 className="text-gray-400" />
             </div>
             <div className="cursor-pointer">
-              <Image
-                src={"/messages.png"}
-                alt="Messages"
-                width={20}
-                height={20}
-              />
+              <MessagesSquareIcon className="text-gray-400" />
             </div>
             <div className="cursor-pointer">
-              <Image
-                src={"/notifications.png"}
-                alt="Notifications"
-                width={20}
-                height={20}
-              />
+              <BellIcon className="text-gray-400" />
             </div>
             <UserButton />
             <MobileMenu />
