@@ -8,10 +8,7 @@ const Comments = () => {
     <div>
       <div className="flex items-center gap-4">
         <Avatar>
-          <AvatarImage
-            src="https://images.pexels.com/photos/27545223/pexels-photo-27545223/free-photo-of-model-in-sweater-lying-on-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            className="object-cover"
-          />
+          <AvatarImage src="/alex.jpg" className="object-cover" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
 
@@ -28,10 +25,7 @@ const Comments = () => {
       <div className="mt-6">
         <div className="flex gap-4">
           <Avatar className="h-10 w-10">
-            <AvatarImage
-              src="https://images.pexels.com/photos/19640832/pexels-photo-19640832/free-photo-of-untitled.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
-              className="object-cover"
-            />
+            <AvatarImage src="/wifey.jpg" className="object-cover" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
 

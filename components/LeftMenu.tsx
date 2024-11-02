@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const LeftMenu = () => {
-  return (
-    <div>LeftMenu</div>
-  )
-}
+const LeftMenu = ({ type }: { type: "home" | "profile" }) => {
+  return <div>{type === "home" && }</div>;
+};
 
-export default LeftMenu
+export default LeftMenu;

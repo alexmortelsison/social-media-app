@@ -16,10 +16,7 @@ const Post = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Avatar>
-            <AvatarImage
-              src="https://images.pexels.com/photos/27545223/pexels-photo-27545223/free-photo-of-model-in-sweater-lying-on-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              className="object-cover"
-            />
+            <AvatarImage src="/alex.jpg" className="object-cover" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <span className="font-medium">Alex Sison</span>
